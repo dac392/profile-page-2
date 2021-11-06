@@ -1,0 +1,234 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  font: 400 16px "Nunito", sans-serif;
+}
+/*
+==========================================
+header
+==========================================
+*/
+header {
+  height: fit-content;
+  padding: 10px 40px 40px;
+  background-color: #f5f6ea;
+  color: #444;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.hd-name {
+  font: 700 1.7rem "Nunito", sans-serif;
+  margin: 20px 0px;
+}
+.flex-list-container {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.li-flex-item {
+  margin: 5px;
+  padding: 5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-color: white;
+  width: 100%;
+  text-align: center;
+}
+li a {
+  text-decoration: none;
+  color: black;
+}
+
+img {
+  width: 75%;
+  align-self: center;
+  margin: 20px;
+  margin-top: 30px;
+}
+
+.header-text {
+  color: gray;
+  font-size: 14px;
+}
+
+/*
+================================================
+    portfolio
+================================================
+*/
+main {
+  color: #444;
+  background-color: linear-gradient(#f5f6ea, white);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  padding: 10px 20px 40px;
+}
+
+.title-text {
+  margin: 20px;
+}
+.folio-img {
+  margin: 30px 0 5px;
+  width: 100%;
+}
+.entry-name {
+  margin: 10px;
+  margin-top: 0px;
+}
+.entry-blurb {
+  line-height: 1.5;
+  color: grey;
+  margin-bottom: 5px;
+}
+/*
+================================
+footer
+================================
+*/
+footer {
+  background-color: #f5f6ea;
+  color: #444;
+  padding: 10px 10px 40px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.footer-header {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+}
+.foot-text {
+  color: grey;
+  margin: 20px auto;
+}
+
+.contact-info {
+  list-style: none;
+  color: grey;
+  margin-bottom: 20px;
+}
+.contact-info li {
+  margin: 5px auto;
+}
+
+.phone-number {
+  font-weight: 700;
+}
+
+/*
+=================================
+foot footer
+=================================
+*/
+.eof-container {
+  padding: 20px 10px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.to-top-btn {
+  text-decoration: none;
+  color: black;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+footer nav {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  /*
+    ==========================
+    header
+    ==========================
+    */
+  .flex-list-container {
+    flex-direction: row;
+  }
+  .li-flex-item {
+    background-color: unset;
+  }
+  .header-local-space {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+    text-align: left;
+  }
+  header img {
+    width: 50%;
+    align-self: flex-end;
+    margin-right: 5px;
+  }
+  .header-text {
+    align-self: flex-start;
+    width: 50%;
+    margin: 40px 5px;
+    font-size: 1.2rem;
+  }
+  /*
+  ====================================
+  main
+  ====================================
+  */
+  main {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .title-text {
+    width: 100%;
+  }
+  .folio-entry {
+    width: 45%;
+    margin: 0px;
+  }
+  /*
+  =====================================
+  footer
+  =====================================
+  */
+  .foot-text {
+    width: 58%;
+  }
+  .to-top-btn {
+    display: none;
+  }
+  footer nav {
+    display: inline-block;
+  }
+  .eof-container {
+    margin-bottom: 80px;
+  }
+  .eof-container .foot-name {
+    padding: 5px;
+  }
+  .eof-container .foot-name::before {
+    content: "Diego ";
+  }
+}
+@media (min-width: 1024px) {
+  .desktop {
+    display: flex;
+    justify-content: space-between;
+  }
+  .flex-list-container {
+    padding-top: 20px;
+  }
+  .folio-entry {
+    width: 30%;
+    margin: 0px;
+  }
+
+  .eof-container {
+    margin-bottom: 20px;
+  }
+}
