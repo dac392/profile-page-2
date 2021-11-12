@@ -79,8 +79,8 @@ header .profile-image:hover {
 .tag {
   background-color: #efefef;
   color: black;
-  padding: 10px;
-  border-radius: 5px;
+  padding: 10px 20px;
+  border-radius: 35px;
   display: table;
   margin: 10px auto;
 }
